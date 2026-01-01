@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Focus Timer Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="timer">
+      <h1>Focus Timer</h1>
+      <div id="time-display">25:00</div>
+      <div class="timer-controls">
+        <button id="start-btn">Start</button>
+        <button id="pause-btn">Pause</button>
+        <button id="reset-btn">Reset</button>
+      </div>
+      <p>Sessions today: <span id="session-count">0</span></p>
+    </section>
+
+    <section class="tasks">
+      <h2>Tasks</h2>
+      <form id="task-form">
+        <input id="task-input" type="text" placeholder="New task..." required />
+        <button type="submit">Add</button>
+      </form>
+      <ul id="task-list"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
